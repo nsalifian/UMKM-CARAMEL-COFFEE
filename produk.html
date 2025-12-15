@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produk - UMKM Matcha Garden</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="images/Logo Matcha.png" alt="Logo UMKM" width="100"height="100"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-bstoggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
+                <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang Kami</a></li>
+                <li class="nav-item"><a class="nav-link" href="produk.html">Produk</a></li>
+                <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+                <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <div class="row g-4">
+  
+      <!-- CARD 1 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/iced-matcha-latte.jpg" class="card-img-top" alt="Produk 1">
+          <div class="card-body">
+            <h5 class="card-title">Matcha Latte Original</h5>
+            <p class="card-text">Matcha latte creamy dengan rasa premium.</p>
+            <a href="#" class="btn btn-primary">Beli Sekarang</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- CARD 2 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/Matcha Cheesecake.jpeg" class="card-img-top" alt="Produk 2">
+          <div class="card-body">
+            <h5 class="card-title">Matcha Cheesecake</h5>
+            <p class="card-text">Cheesecake lembut dengan aroma matcha khas.</p>
+            <a href="#" class="btn btn-primary">Beli Sekarang</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- CARD 3 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/Pudding Matcha.jpeg" class="card-img-top" alt="Produk 3">
+          <div class="card-body">
+            <h5 class="card-title">Pudding Matcha</h5>
+            <p class="card-text">Pudding rasa matcha dengan tekstur lembut.</p>
+            <a href="#" class="btn btn-primary">Beli Sekarang</a>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  
+        
+    <main>
+        <h2>Produk Unggulan Kami</h2>
+        <p>Berikut daftar produk Matcha Garden yang kami sediakan:</p>
+        
+        <table border="1" cellspacing="0" cellpadding="8">
+          <thead>
+            <tr>
+                <th>Produk</th>
+                <th>Harga</th>
+                <th>Jenis</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Matcha Original</td>
+                <td>Rp 14.000</td>
+                <td rowspan="3" style="vertical-align: top;"> Matcha Latte</td>
+            </tr>
+            <tr>
+                <td>Strawberry Cream Matcha</td>
+                <td>Rp 17.000</td>
+            </tr>
+            <tr>
+                <td>Choco Matcha</td>
+                <td>Rp 17.000</td>
+            </tr>
+            <tr>
+                <td>Matcha Cheseeckae Original</td>
+                <td>Rp 20.000</td>
+                <td rowspan="2" style="vertical-align: top;"> Matcha Cheseecake</td>
+            </tr>
+            <tr>
+                <td>Matcha Cheseeckae Brownie</td>
+                <td>Rp 22.000</td>
+            </tr>
+            <tr>
+                <td>Puding Matcha</td>
+                <td>Rp 10.000</td>
+                <td rowspan="1" style="vertical-align: top;"> Puding Matcha</td>
+            </tr>
+            <tr>
+                <td colspan="4" style="text-align: center; background-color:
+        #eee;">
+                Semua harga sudah termasuk PPN
+                </td>
+            </tr>
+        </tbody>
+        </table>
+
+        <div class="card">
+            <h3>Profil Produk</h3>
+            <img src="images/Banner.jpg" alt="Matcha Garden" width="300" />
+            <p>Matcha ini berasal dari daun teh hijau pilihan, memiliki cita rasa lembut, 
+            aroma segar, dan kaya manfaat untuk kesehatan.</p>
+        <h3>Rating Produk: <span id="hasil-rating"></span></h3>
+        </div>
+
+        <h3>Layanan Unggulan:</h3>
+        <ul id="layanan-list"></ul>
+        
+        <script>
+            let layanan = ["Gratis Ongkir", "Bayar di Tempat", "Garansi 30 Hari"];
+            
+            layanan.forEach(function(item) {
+             let li = document.createElement("li");
+             li.textContent = item;
+             document.getElementById("layanan-list").appendChild(li);
+            });
+        </script>
+
+        <h3>Form Pemesanan</h3>
+        <form onsubmit="return cekForm()">
+            <input type="text" id="namaProduk" placeholder="Nama Produk"><br>
+            <input type="number" id="jumlah" placeholder="Jumlah"><br>
+            
+            <button type="submit">Pesan</button>
+        </form>
+
+        <script>
+            function cekForm() {
+              let nama = document.getElementById("namaProduk").value;
+              let jumlah = document.getElementById("jumlah").value;
+
+              if (nama === "" || jumlah === "") {
+                alert("Semua kolom wajib diisi.");
+                return false;
+              }
+
+              if (jumlah <= 0) {
+                alert("Jumlah harus lebih dari 0");
+                return false;
+              }
+
+              alert("Pemesanan berhasil dikirim!");
+              return true;
+            }
+        </script>
+        
+        <section class="usia">
+            <h3>Cek Kategori Usia Pelanggan</h3>
+            <input type="number" id="usia" placeholder="Masukkan usia Anda">
+            <button onclick="cekKategori()">Cek</button>
+            <p id="hasilUsia"></p>
+          </section>
+      
+          <!--PERULANGAN -->
+          <section class="testimoni">
+            <h3>Testimoni Pelanggan</h3>
+            <div id="listTestimoni"></div>
+          </section>
+      
+          <!--FUNGSI -->
+          <section class="belanja">
+            <h3>Hitung Total Belanja</h3>
+            <form onsubmit="prosesBelanja(event)">
+              <label>Harga Produk (Rp):</label>
+              <input type="number" id="harga" required><br>
+              <label>Jumlah Beli:</label>
+              <input type="number" id="jumlah" required><br>
+              <button type="submit">Hitung Total</button>
+            </form>
+            <p id="hasilTotal"></p>
+          </section>
+
+        <div class="card">
+            <h3>Dengarkan Cerita Kami</h3>
+        <audio controls>
+            <source src="audio/audio matcha.mp3" type="audio/mpeg">
+        </audio>
+        </div>
+
+        <div class="card">
+            <h3>Lihat Produk Kami</h3>
+        <video width="320" height="240" controls>
+            <source src="videos/video matcha.mp4" type="video/mp4">
+        </video>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Matcha Garden</p>
+    </footer>
+    <script>
+        let rating = 4;
+
+        if (rating >= 4.5) { 
+            document.getElementById("hasil-rating").textContent = "★★★★★ Sangat Disarankan";
+        } else if (rating >= 3) {
+          document.getElementById("hasil-rating").textContent = "★★★ Rekomendasi Biasa";
+        } else {
+          document.getElementById("hasil-rating").textContent = "★ Tidak Direkomendasikan";
+        }
+    </script>
+
+<script>
+    //Percabangan
+    function cekKategori() {
+      const usia = parseInt(document.getElementById("usia").value);
+      let kategori = "";
+
+      if (usia < 13) kategori = "Anak-anak";
+      else if (usia <= 17) kategori = "Remaja";
+      else if (usia <= 60) kategori = "Dewasa";
+      else kategori = "Lansia";
+
+      document.getElementById("hasilUsia").textContent = "Kategori Anda: " + kategori;
+    }
+
+    //Perulangan
+    const testimoni = [
+      "“Matcha-nya lembut dan creamy banget!” – Bagas",
+    "“Tempatnya aesthetic dan cocok buat healing.” – Nia",
+    "“Rasa matcha premium, aroma tehnya khas!” – Ais",
+    "“Pelayanan cepat dan baristanya ramah.” – Naufal",
+    "“Wajib coba Matcha Latte-nya, enak banget!” – Eka"
+    ];
+
+    const divTestimoni = document.getElementById("listTestimoni");
+    testimoni.forEach((t) => {
+      const p = document.createElement("p");
+      p.textContent = t;
+      divTestimoni.appendChild(p);
+    });
+
+    //Fungsi
+    function hitungTotal(harga, jumlah) {
+      return harga * jumlah;
+    }
+
+    function prosesBelanja(event) {
+      event.preventDefault();
+      const harga = parseFloat(document.getElementById("harga").value);
+      const jumlah = parseInt(document.getElementById("jumlah").value);
+      const total = hitungTotal(harga, jumlah);
+      document.getElementById("hasilTotal").textContent = "Total Belanja Anda: Rp " + total.toLocaleString();
+    }
+  </script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function(){
+        $(".btn-primary").click(function(e){
+            e.preventDefault();
+            alert("Terima kasih, produk akan segera diproses!");
+        });
+    });
+  </script>
+</body>
+</html>
