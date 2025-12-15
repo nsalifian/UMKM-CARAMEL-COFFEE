@@ -12,6 +12,7 @@ Tentang:
   - Menggunakan bubuk matcha pilihan dari petani teh lokal.
   - Menyediakan produk alami tanpa bahan tambahan berbahaya.
   - Membudayakan konsumsi matcha berkualitas di masyarakat modern.
+  
 Kontak:
 - Instagram: @matchagarden
 - Tiktok: @matchagarden
