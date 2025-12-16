@@ -1,19 +1,15 @@
-# MATCHA GARDEN
-UMKM Matcha Garden menyajikan minuman dan makanan berbahan dasar matcha dengan cita rasa autentik dan modern.
+# CARAMEL COFFEE
+Kopi Karamel adalah minuman kopi dengan perpaduan rasa pahit khas kopi dan manis legit karamel. Minuman ini memiliki tekstur lembut, aroma harum, serta cocok disajikan panas maupun dingin.
 
 Produk Unggulan:
-- Matcha Latte
-- Matcha Cheesecake
-- Pudding Matcha 
+- Salted Caramel Latte
+- Cake Caramel
+- Affogato Caramel
 
-Tentang:
-- Visi: Menjadi pilihan utama minuman matcha sehat yang alami, praktis, dan bermanfaat bagi kesehatan serta kebuguran masyarakat.
-- Misi: 
-  - Menggunakan bubuk matcha pilihan dari petani teh lokal.
-  - Menyediakan produk alami tanpa bahan tambahan berbahaya.
-  - Membudayakan konsumsi matcha berkualitas di masyarakat modern.
+Karakteristik:
+- Rasa seimbang (kopi & karamel)
+- Aroma kopi sangrai
+- Cocok untuk konsumen muda dan penikmat kopi kasual
   
-Kontak:
-- Instagram: @matchagarden
-- Tiktok: @matchagarden
-- Email: matchagarden@email.com
+Penutup:
+Kopi Karamel merupakan varian kopi modern yang sederhana, mudah dibuat, dan memiliki potensi tinggi untuk dikembangkan sebagai produk minuman.

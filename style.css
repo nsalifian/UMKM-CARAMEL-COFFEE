@@ -2,14 +2,14 @@
 body {
   font-family: 'Segoe UI', 'Segoe UI', Tahoma, Verdana, sans-serif sans-serif ;
   background-color: #f9fdf9;
-  color: #2e3d2b;
+  color: #3b2a20;
   margin: 0;
   padding: 0;
 }
 
 /* Header */
 header {
-  background-color: #74a662;
+  background-color: #6b3d1f;
   color: white;
   padding: 20px;
   text-align: center;
@@ -31,7 +31,7 @@ nav ul li a {
 
 /* Judul halaman */
 h2 {
-  color: #74a662;
+  color: #6b3d1f;
 }
 
 /* Tabel produk */
@@ -53,7 +53,7 @@ th {
 
 /* Footer lebih menarik */
 footer {
-  background-color: #74a662;
+  background-color: #6b3d1f;
   color: white;
   text-align: center;
   padding: 20px;
@@ -96,7 +96,7 @@ form input[type="checkbox"] {
 }
 
 form button[type="submit"] {
-  background-color: #74aa62;
+  background-color: #6b3d1f;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -107,7 +107,7 @@ form button[type="submit"] {
 }
 
 form button[type="submit"]:hover {
-  background-color: #74aa62;
+  background-color: #6b3d1f;
 }
 
 /* Gambar dengan card */
@@ -184,7 +184,7 @@ img {
 }
 
 nav {
-  background-color: #74a662;
+  background-color: #6b3d1f;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -243,8 +243,8 @@ nav ul li a {
   
 .nav-menu li a:hover,
 .nav-menu li a.active {
-  color: #3d702b;
-  border-bottom: 2px solid #3d702b;
+  color: #3b2a20;
+  border-bottom: 2px solid #3b2a20;
 }
 
 .hero {
@@ -276,7 +276,7 @@ nav ul li a {
 .testimoni .card {
   background-color: #fff;
   padding: 20px;
-  border-left: 5px solid #819e77;
+  border-left: 5px solid #532a10;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   border-radius: 6px;
   margin-top: 20px;
@@ -285,7 +285,7 @@ nav ul li a {
 .hover-aktif {
   transform: scale(1.05);
   transition: 0.3s;
-  border: 3px solid #4CAF50;
+  border: 3px solid #4a2e2a;
   border-radius: 10px;
 }
 .galeri-container {
